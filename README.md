@@ -55,7 +55,7 @@ src/
  ├── main.jsx           # Entry point
  ├── index.css          # Global styles
 public/
- ├── favicon.ico
+ ├── favicon.png
  ├── logo.png
 ```
 

@@ -1,8 +1,11 @@
 import React from 'react'
 
-const AssetForm = () => {
+const AssetForm = ({ setPortfolio }) => {
   return (
-    <div>AssetForm</div>
+    <div>
+      <h2>Add Asset</h2>
+      <p>(Form coming soon)</p>
+    </div>
   )
 }
 

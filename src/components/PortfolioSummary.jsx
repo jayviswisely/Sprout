@@ -1,8 +1,11 @@
 import React from 'react'
 
-const PortfolioSummary = () => {
+const PortfolioSummary = ({ portfolio }) => {
   return (
-    <div>PortfolioSummary</div>
+    <div>
+      <h2>Portfolio Summary</h2>
+      <p>Total Value: (calculation coming soon)</p>
+    </div>
   )
 }
 

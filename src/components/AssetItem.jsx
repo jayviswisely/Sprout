@@ -1,8 +1,10 @@
 import React from 'react'
 
-const AssetItem = () => {
+const AssetItem = ({ asset }) => {
   return (
-    <div>AssetItem</div>
+    <div>
+      {asset.name} - {asset.type} - (details coming soon)
+    </div>
   )
 }
 

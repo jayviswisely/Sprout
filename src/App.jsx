@@ -1,9 +1,8 @@
-function App() {
+import React from 'react'
+
+const App = () => {
   return (
-    <div>
-      <h1>Sprout</h1>
-      <p>Welcome to your investment tracker.</p>
-    </div>
+    <div>App</div>
   )
 }
 

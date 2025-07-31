@@ -13,7 +13,6 @@ const AssetList = ({ portfolio }) => {
         ))
       )}
     </div>
-
   )
 }
 

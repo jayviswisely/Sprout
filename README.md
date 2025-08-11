@@ -11,6 +11,7 @@ It helps you manage your portfolio, monitor gains/losses, and visualize your ass
 - Store data locally with persistence
 - Responsive and modern UI
 - Designed for personal daily use
+- Sync with Real-time prices (Coming Soon)
 
 ---
 

@@ -14,12 +14,22 @@ const App = () => {
     localStorage.setItem('portfolio', JSON.stringify(portfolio))
   }, [portfolio])
 
+  const handleDeleteAsset = (id) => {
+    setPortfolio((prevPortfolio) =>
+      prevPortfolio.filter((asset) => asset.id !== id)
+    );
+  };
+
+
   return (
     <>
       <h1>Your Portfolio:</h1>
       <PortfolioSummary portfolio={portfolio} />
       <AssetForm setPortfolio={setPortfolio} />
-      <AssetList portfolio={portfolio} />
+      <AssetList
+        portfolio={portfolio}
+        onDelete={handleDeleteAsset}
+      />
     </>
   )
 }

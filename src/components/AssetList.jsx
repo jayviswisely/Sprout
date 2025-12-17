@@ -1,7 +1,7 @@
 import React from 'react'
 import AssetItem from './AssetItem'
 
-const AssetList = ({ portfolio, onDelete }) => {
+const AssetList = ({ portfolio, onDelete, onEdit }) => {
   return (
     <div>
       <h2>Asset List</h2>
@@ -13,6 +13,7 @@ const AssetList = ({ portfolio, onDelete }) => {
             key={asset.id}
             asset={asset}
             onDelete={onDelete}
+            onEdit={onEdit}
           />
         ))
       )}

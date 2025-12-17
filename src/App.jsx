@@ -20,6 +20,15 @@ const App = () => {
     );
   };
 
+  const handleEditAsset = (id, newPrice) => {
+    setPortfolio((prevPortfolio) =>
+      prevPortfolio.map((asset) =>
+        asset.id === id
+          ? { ...asset, currentPrice: Number(newPrice) }
+          : asset
+      )
+    );
+  };
 
   return (
     <>
@@ -29,6 +38,7 @@ const App = () => {
       <AssetList
         portfolio={portfolio}
         onDelete={handleDeleteAsset}
+        onEdit={handleEditAsset}
       />
     </>
   )
